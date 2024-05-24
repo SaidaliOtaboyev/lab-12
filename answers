@@ -6,7 +6,7 @@
 #include <cctype>
 using namespace std;
 
-
+/////////////////////////////////////////////////////////////////
 int evenCount(const int* a, int size) {
     int count = 0;
     const int* ptr = a;  // Initialize pointer to the start of the array
@@ -15,13 +15,13 @@ int evenCount(const int* a, int size) {
         if (*ptr % 2 == 0) {
             count++;
         }
-        ptr++;  
+        ptr++;  // Move the pointer to the next element
     }
 
     return count;
 }
 
-
+/////////////////////////////////////////////////////////////////
 bool isMirrored(const int* a, const int* b, int size) {
     const int* ptrA = a;       
     const int* ptrB = b + size - 1; 
@@ -34,7 +34,7 @@ bool isMirrored(const int* a, const int* b, int size) {
     return true; 
 }
 
-
+/////////////////////////////////////////////////////////////////
 
 void sumArrays(const double* arr1, const double* arr2, double* sum, int size) {
     const double* ptr1 = arr1; 
@@ -49,7 +49,7 @@ void sumArrays(const double* arr1, const double* arr2, double* sum, int size) {
     }
 }
 
-
+/////////////////////////////////////////////////////////////////
 void swap(int* arr1, int* arr2, int size) {
     int* ptr1 = arr1;
     int* ptr2 = arr2; 
@@ -62,7 +62,7 @@ void swap(int* arr1, int* arr2, int size) {
         ptr2++;           
     }
 }
-
+/////////////////////////////////////////////////////////////////
 bool is_in(const int* arr1, const int* arr2, int size1, int size2) {
     const int* p1 = arr1; 
     const int* p2 = arr2; 
@@ -88,7 +88,7 @@ bool is_in(const int* arr1, const int* arr2, int size1, int size2) {
 
     return true; 
 }
-
+/////////////////////////////////////////////////////////////////
 void power(double* n, const int* p) {
     double result = 1.0;
     int exponent = *p;
@@ -106,7 +106,7 @@ void power(double* n, const int* p) {
     *n = result; 
 }
 
-
+/////////////////////////////////////////////////////////////////
 vector<int> addOne(vector<int>& v) {
     int n = v.size();
     for (int i = n - 1; i >= 0; --i) {
@@ -119,7 +119,7 @@ vector<int> addOne(vector<int>& v) {
     v.insert(v.begin(), 1);
     return v;
 }
-
+/////////////////////////////////////////////////////////////////
 
 string normalizeString(const string& input) {
    string normalized = input;
@@ -134,7 +134,7 @@ string normalizeString(const string& input) {
 
     return normalized;
 }
-
+/////////////////////////////////////////////////////////////////
 int singleNum(vector<int>& vec) {
     int result = 0;
     for (int num : vec) {
